@@ -9,13 +9,13 @@ def fun():
     a = input("Please enter one of the above options.")
     try:
         if int(a) == 1:
-            driver = webdriver.Chrome(executable_path="C:/Users/ras73/Desktop/chromedriver_win32/chromedriver.exe")
+            driver = webdriver.Chrome(executable_path="C:/Users/path/to/chromedriver.exe")
             driver.get("https://www.nmamit.nitte.edu.in/")
         elif int(a) == 2:
-            driver = webdriver.Chrome(executable_path="C:/Users/ras73/Desktop/chromedriver_win32/chromedriver.exe")
+            driver = webdriver.Chrome(executable_path="C:/Users/path/to/chromedriver.exe")
             driver.get("http://guru.nmamit.in/login/index.php")
         elif int(a) == 3:
-            driver = webdriver.Chrome(executable_path="C:/Users/ras73/Desktop/chromedriver_win32/chromedriver.exe")
+            driver = webdriver.Chrome(executable_path="C:/Users/path/to/chromedriver.exe")
             driver.get("http://www.ioncudos.com/nmamit_parent/login")
         else:
             clear = lambda: os.system('cls')
