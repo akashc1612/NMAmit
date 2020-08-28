@@ -1,8 +1,5 @@
 from selenium import webdriver
-from selenium.webdriver.common.keys import *
 import tkinter as tk
-from tkinter import filedialog
-import os
 def site1():
     driver = webdriver.Chrome(executable_path="C:/Users/ras73/Desktop/chromedriver_win32/chromedriver.exe")
     driver.get("https://www.nmamit.nitte.edu.in/")
