@@ -5,7 +5,7 @@ import tkinter as tk
 
 def site1():
 
-    driver = webdriver.Chrome(executable_path="C:/Users/ras73/Desktop/chromedriver_win32/chromedriver.exe")
+    driver = webdriver.Chrome(executable_path="C:/Users/path/chromedriver_win32/chromedriver.exe")
     driver.get("https://www.nmamit.nitte.edu.in/")
 
 
@@ -36,7 +36,7 @@ def site2():
               command=getInput).grid(row=5, sticky=tk.W)
     tk.mainloop()
 
-    driver = webdriver.Chrome(executable_path="C:/Users/ras73/Desktop/chromedriver_win32/chromedriver.exe")
+    driver = webdriver.Chrome(executable_path="C:/Users/path/chromedriver_win32/chromedriver.exe")
     driver.get("http://guru.nmamit.in/login/index.php")
     username = driver.find_element_by_name("username")
     password = driver.find_element_by_name("password")
@@ -70,7 +70,7 @@ def site3():
               command=getInput).grid(row=5, sticky=tk.W)
     tk.mainloop()
 
-    driver = webdriver.Chrome(executable_path="C:/Users/ras73/Desktop/chromedriver_win32/chromedriver.exe")
+    driver = webdriver.Chrome(executable_path="C:/Users/path/chromedriver_win32/chromedriver.exe")
     driver.get("http://www.ioncudos.com/nmamit_parent/login")
     username = driver.find_element_by_name("phone")
     password = driver.find_element_by_name("password")
