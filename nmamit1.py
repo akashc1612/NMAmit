@@ -1,12 +1,14 @@
 from selenium import webdriver
 from selenium.webdriver.common.keys import *
 import tkinter as tk
-
+from time import *
 
 def site1():
 
     driver = webdriver.Chrome(executable_path="C:/Users/path/chromedriver_win32/chromedriver.exe")
     driver.get("https://www.nmamit.nitte.edu.in/")
+    driver.maximize_window()
+    sleep(3 * 60 * 60)
 
 
 
@@ -29,8 +31,8 @@ def site2():
 
         root1.destroy()
 
-        global params
-        params = [a, b]
+        global p
+        p = [a, b]
 
     tk.Button(root1, text="submit",
               command=getInput).grid(row=5, sticky=tk.W)
@@ -38,13 +40,14 @@ def site2():
 
     driver = webdriver.Chrome(executable_path="C:/Users/path/chromedriver_win32/chromedriver.exe")
     driver.get("http://guru.nmamit.in/login/index.php")
+    driver.maximize_window()
     username = driver.find_element_by_name("username")
     password = driver.find_element_by_name("password")
-    username.send_keys(params[0])
-    password.send_keys(params[1])
+    username.send_keys(p[0])
+    password.send_keys(p[1])
     password.send_keys(Keys.RETURN)
     driver.find_element_by_xpath("/html/body/div[3]/div[1]/section/div/div/div[1]/div/div/div[1]/a/div/i").click()
-
+    sleep(3 * 60 * 60)
 def site3():
     root.destroy()
     root1 = tk.Tk()
@@ -63,8 +66,8 @@ def site3():
 
         root1.destroy()
 
-        global params
-        params = [a, b]
+        global p
+        p = [a, b]
 
     tk.Button(root1, text="submit",
               command=getInput).grid(row=5, sticky=tk.W)
@@ -72,11 +75,13 @@ def site3():
 
     driver = webdriver.Chrome(executable_path="C:/Users/path/chromedriver_win32/chromedriver.exe")
     driver.get("http://www.ioncudos.com/nmamit_parent/login")
+    driver.maximize_window()
     username = driver.find_element_by_name("phone")
     password = driver.find_element_by_name("password")
-    username.send_keys(params[0])
-    password.send_keys(params[1])
+    username.send_keys(p[0])
+    password.send_keys(p[1])
     password.send_keys(Keys.RETURN)
+    sleep(3 * 60 * 60)
 
 root = tk.Tk()
 canvas1 = tk.Canvas(root, width=300, height=300, bg='lightsteelblue2', relief='raised')
