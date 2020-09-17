@@ -1,14 +1,21 @@
 from selenium import webdriver
 import tkinter as tk
+from time import *
 def site1():
-    driver = webdriver.Chrome(executable_path="C:/Users/ras73/Desktop/chromedriver_win32/chromedriver.exe")
+    driver = webdriver.Chrome(executable_path="C:/Users/path to/chromedriver_win32/chromedriver.exe")
     driver.get("https://www.nmamit.nitte.edu.in/")
+    driver.maximize_window()
+    sleep(60 * 60)
 def site2():
-    driver = webdriver.Chrome(executable_path="C:/Users/ras73/Desktop/chromedriver_win32/chromedriver.exe")
+    driver = webdriver.Chrome(executable_path="C:/Users/path to/chromedriver_win32/chromedriver.exe")
     driver.get("http://guru.nmamit.in/login/index.php")
+    driver.maximize_window()
+    sleep(60 * 60)
 def site3():
-    driver = webdriver.Chrome(executable_path="C:/Users/ras73/Desktop/chromedriver_win32/chromedriver.exe")
+    driver = webdriver.Chrome(executable_path="C:/Users/path to/chromedriver_win32/chromedriver.exe")
     driver.get("http://www.ioncudos.com/nmamit_parent/login")
+    driver.maximize_window()
+    sleep(60 * 60)
 
 
 
