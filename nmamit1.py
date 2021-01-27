@@ -5,7 +5,7 @@ from time import *
 
 def site1():
 
-    driver = webdriver.Chrome(executable_path="C:/Users/path/chromedriver_win32/chromedriver.exe")
+    driver = webdriver.Chrome(executable_path="C:/Usrs/path/chromedriver_win32/chromedriver.exe")
     driver.get("https://www.nmamit.nitte.edu.in/")
     driver.maximize_window()
     sleep(3 * 60 * 60)
